@@ -1,5 +1,7 @@
 package qlhv.main;
 
+import qlhv.view.LoginJDialog;
+
 /**
  *
  * @author PC
@@ -7,6 +9,12 @@ package qlhv.main;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("QLHV!");
+
+        LoginJDialog dialog = new LoginJDialog(null, true);
+        dialog.setTitle("Đăng nhập");
+        dialog.setResizable(false);
+        dialog.setLocationRelativeTo(null);
+        dialog.setVisible(true);
+
     }
 }
