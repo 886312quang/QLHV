@@ -35,7 +35,7 @@ public class HocVien {
     public String getPhone() {
         return phone;
     }
-
+    
     public void setPhone(String phone) {
         this.phone = phone;
     }
@@ -70,5 +70,10 @@ public class HocVien {
 
     public void setActive(boolean active) {
         this.active = active;
+    }
+
+    @Override
+    public String toString() {
+        return "HocVien{" + "studentCode=" + studentCode + ", name=" + name + '}';
     }
 }
